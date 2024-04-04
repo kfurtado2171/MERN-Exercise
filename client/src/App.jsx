@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import Task from './components/Task';
 import TaskList from './components/TaskList';
+import './bootstrap.min.css';
 
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTodoText, setNewTodoText] = useState('');
-  const backendUrl =  'http://localhost:5050/api/todos'; 
+  const backendUrl =  'https://orange-yodel-vwvpv67qx6g2xw67-5050.app.github.dev/'; 
 
   // Fetch todos from backend on component mount
   useEffect(() => {

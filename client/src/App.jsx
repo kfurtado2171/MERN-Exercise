@@ -7,7 +7,7 @@ import './bootstrap.min.css';
 function App() {
   const [todos, setTodos] = useState([]);
   const [newTodoText, setNewTodoText] = useState('');
-  const backendUrl =  'https://orange-yodel-vwvpv67qx6g2xw67-5050.app.github.dev/'; 
+  const backendUrl =  'http://localhost:5050/api/todos'; 
 
   // Fetch todos from backend on component mount
   useEffect(() => {
